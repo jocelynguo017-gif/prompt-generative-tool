@@ -21,7 +21,7 @@ st.set_page_config(
 # =========================
 # Read API key from Streamlit Cloud Secrets / env
 # =========================
-API_KEY = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY", ""))
+API_KEY = st.secrets.get("GEMINI_API_KEY", os.getenv("AIzaSyC3FET0LYqlWUDqNLXL8JiNS63qpyyXzm4", ""))
 if not API_KEY:
     st.error("缺少 GEMINI_API_KEY：请在 Streamlit Cloud -> Manage app -> Settings -> Secrets 中配置。")
     st.stop()
