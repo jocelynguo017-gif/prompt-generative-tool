@@ -58,13 +58,6 @@ def call_gemini(api_key, system_instruction, user_content, media_files=None, cha
     except Exception as e:
         return f"API 调用出错: {str(e)}"
 
-# --- 侧边栏：配置 ---
-with st.sidebar:
-    st.title("⚙️ 设置")
-    api_key = st.text_input("请输入 Google Gemini API Key", type="AIzaSyC3FET0LYqlWUDqNLXL8JiNS63qpyyXzm4")
-    st.markdown("---")
-    st.info("提示：请确保 API Key 有权限访问 Gemini 1.5 Flash 模型。")
-
 # --- 主页面 Tabs ---
 tab1, tab2 = st.tabs(["🚀 立即生成", "📝 历史记录与优化"])
 
