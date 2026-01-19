@@ -61,7 +61,7 @@ def call_gemini(api_key, system_instruction, user_content, media_files=None, cha
 # --- 侧边栏：配置 ---
 with st.sidebar:
     st.title("⚙️ 设置")
-    api_key = st.text_input("请输入 Google Gemini API Key", type="password")
+    api_key = st.text_input("请输入 Google Gemini API Key", type="AIzaSyC3FET0LYqlWUDqNLXL8JiNS63qpyyXzm4")
     st.markdown("---")
     st.info("提示：请确保 API Key 有权限访问 Gemini 1.5 Flash 模型。")
 
